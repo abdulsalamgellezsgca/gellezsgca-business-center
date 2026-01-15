@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Gellezsgca Business Center</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<div class="home-container">
+
+    <h2 class="business-name">Sign Up / Login</h2>
+
+    <input type="text" id="name" placeholder="Full Name (for signup)" style="display:none;">
+    <input type="date" id="dob" placeholder="Date of Birth" style="display:none;">
+    <input type="text" id="address" placeholder="Address" style="display:none;">
+
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button class="luxury-btn" onclick="login()">Login</button>
+    <button class="luxury-btn" onclick="showSignup()">Sign Up</button>
+
+    <p id="message"></p>
+
+</div>
+
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>
