@@ -44,4 +44,12 @@ body {
 .luxury-btn:hover {
     transform: scale(1.07);
 }
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
 
