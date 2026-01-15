@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gellezsgca Business Center Katsina</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Gellezsgca Business Center Katsina</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="home-container">
+  <!-- MAIN CONTAINER -->
+  <div class="container">
 
-    <img src="assets/logo.png" alt="Logo" style="width:120px; margin-bottom:20px;">
+    <!-- LOGO -->
+    <img src="assets/logo.png" alt="Logo" class="logo">
 
+    <!-- BUSINESS NAME -->
     <h1 class="business-name">
-        Gellezsgca Business Center Katsina
+      Gellezsgca Business Center Katsina
     </h1>
 
-    <p class="business-info">
-        No 13 Muhammadu Buhari Road GRA Katsina<br>
-        Email: asalamalameen@gmail.com
+    <!-- CONTACT INFO -->
+    <p class="contact-info">
+      No 13 Muhammadu Buhari Road GRA Katsina<br>
+      Email: asalamalameen@gmail.com
     </p>
 
-    <button class="luxury-btn" onclick="window.location.href='login.html'">
-        Sign Up / Login
+    <!-- LOGIN / SIGNUP BUTTON -->
+    <button id="authBtn" class="royal-btn">
+      Sign Up / Login
     </button>
 
-</div>
+  </div>
+
+  <!-- Firebase -->
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/auth.js"></script>
 
 </body>
 </html>
