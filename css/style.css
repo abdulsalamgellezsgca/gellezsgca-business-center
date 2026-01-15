@@ -1,55 +1,71 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+/* ===== PAGE BACKGROUND ===== */
 body {
-    margin: 0;
-    font-family: Calibri, sans-serif;
-    background: linear-gradient(135deg, #0d0d0d, #2b2b2b);
-    color: #f5f5f5;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0b0f, #1a1a24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
 }
 
-.home-container {
-    text-align: center;
-    background: #111;
-    padding: 50px;
-    border-radius: 25px;
-    box-shadow: 0 0 50px gold;
+/* ===== MAIN CONTAINER ===== */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  max-width: 520px;
+  width: 100%;
 }
 
+/* ===== LOGO ===== */
+.logo {
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+/* ===== BUSINESS NAME ===== */
 .business-name {
-    font-family: "Matura MT Script Capitals", cursive;
-    font-size: 40px;
-    color: gold;
-    margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #d4af37; /* Royal Gold */
+  margin-bottom: 12px;
 }
 
-.business-info {
-    font-size: 18px;
-    margin-bottom: 40px;
+/* ===== CONTACT INFO ===== */
+.contact-info {
+  font-family: Calibri, sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 35px;
+  line-height: 1.6;
 }
 
-.luxury-btn {
-    background: linear-gradient(45deg, gold, #b8860b);
-    color: #000;
-    border: none;
-    padding: 15px 45px;
-    font-size: 18px;
-    border-radius: 60px;
-    cursor: pointer;
-    box-shadow: 0 0 25px gold;
-    transition: 0.3s ease;
+/* ===== ROYAL BUTTON ===== */
+.royal-btn {
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #d4af37, #f2d675);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
 }
 
-.luxury-btn:hover {
-    transform: scale(1.07);
+/* ===== BUTTON HOVER ===== */
+.royal-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(212, 175, 55, 0.6);
 }
-input {
-    width: 90%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-}
-
