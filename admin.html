@@ -1,45 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Customer Dashboard | Gellezsgca Business Center</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- Firebase + Dashboard JS -->
-  <script type="module" src="js/dashboard.js" defer></script>
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="dashboard-header">
-    <img src="assets/logo.png" alt="Logo" class="dashboard-logo" />
-    <h1>Customer Dashboard</h1>
-    <button id="logoutBtn">Logout</button>
-  </header>
+<h2>Admin Dashboard</h2>
 
-  <!-- MAIN CONTENT -->
-  <main class="dashboard-container">
+<div id="txList"></div>
 
-    <h2>Available Services</h2>
-
-    <!-- SERVICES WILL LOAD HERE -->
-    <div id="services" class="services-grid"></div>
-
-  </main>
-
-  <!-- LOGOUT SCRIPT -->
-  <script type="module">
-    import { auth } from "./js/firebase.js";
-    import { signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-
-    document.getElementById("logoutBtn").onclick = async () => {
-      await signOut(auth);
-      window.location.href = "index.html";
-    };
-  </script>
-
+<script type="module" src="js/admin.js"></script>
 </body>
 </html>
