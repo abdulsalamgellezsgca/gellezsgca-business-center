@@ -1,51 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Customer Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<div class="container">
+<h2>Customer Dashboard</h2>
 
-  <h1 class="business-name">Customer Dashboard</h1>
-
-  <div style="margin-top:30px; text-align:left;">
-
-    <button class="royal-btn" style="width:100%; margin-bottom:15px;">
-      👤 Profile
-    </button>
-
-    <button class="royal-btn" style="width:100%; margin-bottom:15px;">
-      🧾 Receipts
-    </button>
-
-    <button class="royal-btn" style="width:100%; margin-bottom:15px;">
-      🛒 Order Services
-    </button>
-
-    <button class="royal-btn" style="width:100%; margin-bottom:15px;">
-      🛍 Buy Services
-    </button>
-
-    <button class="royal-btn" style="width:100%; margin-bottom:15px;">
-      💳 Payment Services
-    </button>
-
-    <button class="royal-btn" style="width:100%; margin-bottom:15px;">
-      📩 Support / Report
-    </button>
-
-    <button class="royal-btn" style="width:100%; background:#333; color:#fff;">
-      🚪 Logout
-    </button>
-
-  </div>
-
+<div class="dashboard-buttons">
+  <button>Profile</button>
+  <button>Receipts</button>
+  <button>Order Services</button>
+  <button>Buy Services</button>
+  <button>Payment Services</button>
+  <button>Support</button>
+  <button onclick="logout()">Logout</button>
 </div>
 
 <script type="module" src="js/dashboard.js"></script>
-
 </body>
 </html>
